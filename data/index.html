@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Server</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/3280f2757a.js" crossorigin="anonymous"></script>
+    <style>
+        div {
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-600 grid place-items-center h-screen">
+    <div class="grid justify-items-center shadow-xl bg-blue-50 p-5">
+        <div class="drop-shadow-2xl mb-3">
+            <p class="text-4xl text-gray-800 font-semibold p-2">Current Temperature</p>
+        </div>
+        <div class="bg-blue-50 drop-shadow-2xl border border-none rounded-full p-2">
+            <div class="shadow-inner border border-none rounded-full p-2">
+                <div class="shadow-inner border border-none rounded-full py-10 px-12">
+                    <p>
+                        <span id="temp" class="text-4xl">00.0</span>
+                        <span id="temp-type">°C</span><br>
+                        <span id="temp-icon" class="bg-transparent"><i class="fa-solid fa-temperature-three-quarters"></i></span>
+                        <span id="state">Perfect</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="timer" class="border-b bg-green-900 w-full h-1"></div>
+        <div class="bg-blue-50 drop-shadow-2xl">
+            <button id="celcius-button" class="bg-blue-50 text-gray-800 font-semibold py-2 px-4 border border-none rounded drop-shadow-2xl active:shadow-inner">C</button>
+            <button id="fahrenheit-button" class="bg-blue-50 text-gray-800 font-semibold py-2 px-4 border border-none rounded drop-shadow-2xl active:shadow-inner">F</button>
+        </div>
+        <div class="bg-blue-50 text-gray-800 font-semibold p-5 border border-none rounded drop-shadow-2xl">
+            <p class="bg-blue-50  font-semibold p-2 border border-none rounded shadow-inner mb-2">Student Name: Rawad Haddad</p>
+            <p class="bg-blue-50 text-gray-800 font-semibold p-2 border border-none rounded shadow-inner mb-2">Student Number: 000777218</p>
+            <p class="bg-blue-50 text-gray-800 font-semibold p-2 border border-none rounded shadow-inner">Sensor ID: <span id="sensorid"></span></p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
